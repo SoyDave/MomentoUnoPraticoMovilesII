@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="1dp">
+
+    <ImageView
+        android:id="@+id/imageViewRecord"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:src="@drawable/addphoto"/>
+    <EditText
+        android:id="@+id/edtTarjeta"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:hint="Número de tarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+    <EditText
+        android:id="@+id/edtVencimiento"
+        android:digits="1234567890/"
+        android:inputType="date"
+        android:maxLength="7"
+        android:singleLine="true"
+        android:hint="Vencimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/edtCupo"
+        android:digits="1234567890.,"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:hint="Cupo Máximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/edtDeuda"
+        android:digits="1234567890.,"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:hint="Saldo de Deuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:maxLength="40"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/edtFranquicia"
+        android:hint="Visa, MasterCard, Dinners"
+        android:inputType="textAutoComplete"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Actualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

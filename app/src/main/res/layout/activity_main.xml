@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/ImageView"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorAccent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/addphoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+        <EditText
+            android:id="@+id/edtTarjeta"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:layout_below="@id/ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Número de tarjeta"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/edtVencimiento"
+            android:digits="1234567890/"
+            android:inputType="date"
+            android:maxLength="7"
+            android:singleLine="true"
+            android:layout_below="@id/edtTarjeta"
+            android:hint="Vencimiento tarjeta"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtCupo"
+            android:digits="1234567890.,"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:layout_below="@id/edtVencimiento"
+            android:hint="Cupo máximo"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtDeuda"
+            android:digits="1234567890.,"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:layout_below="@id/edtCupo"
+            android:hint="Saldo de deuda"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_below="@id/edtDeuda"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:maxLength="40"
+            android:singleLine="true"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtFranquicia"
+            android:layout_below="@id/edtNombre"
+            android:hint="Visa, MasterCard, Dinners"
+            android:inputType="textAutoComplete"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_below="@id/edtFranquicia"
+            android:layout_centerHorizontal="true"
+            android:minWidth="260dp"
+            android:text="Guardar registro"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_below="@id/btnAdd"
+            android:layout_centerHorizontal="true"
+            android:minWidth="260dp"
+            android:text="Listar tarjetas"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</ScrollView>
